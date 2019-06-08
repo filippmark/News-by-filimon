@@ -127,6 +127,6 @@ class App extends React.Component {
     }
 }
 
-ReactDOM.render(<BrowserRouter basename = {"/news-app"}> <App /> </BrowserRouter>, document.getElementById("root"));
+ReactDOM.render(<BrowserRouter basename = {"/news-app/"}> <App /> </BrowserRouter>, document.getElementById("root"));
 
 
