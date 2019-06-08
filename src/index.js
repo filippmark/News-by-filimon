@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
+import { BrowserRouter} from 'react-router-dom';
 
 import NewsMain from "./NewsMain/NewsMain";
 import NewsSrcs from './NewsSrcs/NewSrcs';
@@ -126,6 +127,6 @@ class App extends React.Component {
     }
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<BrowserRouter basename = {"/news-app"}> <App /> </BrowserRouter>, document.getElementById("root"));
 
 
